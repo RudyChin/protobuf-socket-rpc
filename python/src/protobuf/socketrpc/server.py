@@ -243,7 +243,7 @@ class ThreadedTCPServer(SocketServer.ThreadingMixIn, SocketServer.TCPServer):
 class SocketRpcServer:
     '''Socket server for running rpc services.'''
 
-    def __init__(self, port, host='localhost'):
+    def __init__(self, port, host=''):
         '''port - Port this server is started on'''
         self.port = port
         self.host = host
